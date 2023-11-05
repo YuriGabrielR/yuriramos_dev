@@ -5,6 +5,7 @@ import { Props } from "../../styles/typeGlobalStyles";
 export const Header = styled.header<Partial<Props>>`
     position:fixed;
     top:0;
+    left:0;
     background: ${(({$isFixed})=> $isFixed ? '#ffffffab': 'transparent')};
     backdrop-filter:${(({$isFixed})=> $isFixed ? 'blur(10px)' : 'blur(0px)' )};
     display:flex;
