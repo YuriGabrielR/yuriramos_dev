@@ -51,14 +51,13 @@ margin-top:200px;
   background-position:center;
   width:220px;
   height:230px;
-  right:-15px;
+  right:0;
   bottom:0; 
   transform:scaleX(-1);
 
   @media (max-width:1189px)  {
+  display:none;    
 
-    right:-300%;
-    
   }
 
 }
