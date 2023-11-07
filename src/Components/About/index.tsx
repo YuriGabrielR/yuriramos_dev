@@ -56,7 +56,7 @@ export default function About() {
 
 
         <ButtonCV> 
-          <a target="_blank" href="">
+          <a target="_blank" href="https://drive.google.com/file/d/1lCUGGNsDJc2SgPmyV636HTblI3olGzOz/view?usp=sharing">
             
              <h3>Currículo</h3>   
 

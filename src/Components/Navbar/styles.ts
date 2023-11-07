@@ -48,10 +48,11 @@ export const Nav = styled.nav<Partial<Props>>`
         z-index:10;
         flex-direction:column;
         justify-content:center;
-        position:absolute;
+        position:fixed;
         width:100vw;
         height:${(({$display})=> $display ? '100vh' : '0')};
         top:0;
+        left:0;
         background-color:#1d976cc4;
         backdrop-filter:blur(2px);
 
