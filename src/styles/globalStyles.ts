@@ -13,10 +13,10 @@ export const GlobalStyle = createGlobalStyle`
 
 
     body{
-        min-width:100vw;
-        min-height:100vh; 
+        min-width:100%;
+        min-height:100%; 
         overflow-x:hidden;
-        
+         
     }
 
 

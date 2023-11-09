@@ -73,14 +73,14 @@ export default function About() {
             <TitlesAbout>Tecnologias que utilizo</TitlesAbout>
 
             <p> Como dev front-end, obtenho experiência nas seguintes
-              tecnologias: <strong>HTML</strong>, <strong>CSS</strong>, <strong>SASS</strong>, <strong>JavaScript</strong>,
+              tecnologias: <strong>HTML</strong>, <strong>CSS</strong>,
+              <strong> Git/Github</strong>, <strong>SASS</strong>, <strong>JavaScript</strong>,
               <strong> TypeScript </strong> ,<strong> React</strong> e
               <strong> Styled Components </strong>.
             </p>
 
-          
+                
 
-            
             <ul>
 
             {IconTechs.map((i, index)=>(
@@ -100,7 +100,15 @@ export default function About() {
         <LibsBox> 
             
             <TitlesAbout> Bibliotecas </TitlesAbout>
-            <p> O uso de bibliotecas nos permite obter uma maior produtividade quando estamos desenvolvendo alguma aplicação, abaixo, deixo algumas das que utilizo em meus projetos: </p>
+            <p> 
+              O uso de bibliotecas nos permite obter uma maior produtividade quando estamos desenvolvendo alguma aplicação, abaixo, deixo algumas das que utilizo: <strong>Framer Motion</strong>, 
+              <strong> Material UI</strong>, <strong> React Query</strong>,
+              <strong> Axios</strong>,
+              <strong> React Router</strong>,<strong> Swiper</strong> e
+              <strong> Redux</strong>.
+    
+             
+            </p>
 
 
               <ul>
@@ -111,6 +119,8 @@ export default function About() {
 
               ))}
               </ul>
+
+
         </LibsBox>
 
           <ToolsBox>

@@ -42,17 +42,16 @@ export const Nav = styled.nav<Partial<Props>>`
 
 
     @media (max-width:755px) {
-
-        opacity:${(({$display})=> $display ? 1 : 0)};
-        pointer-events:${(({$display})=> $display ? 'all' : 'none')};
+        position:absolute;
+        top:0;
+        left:0;
         z-index:10;
         flex-direction:column;
         justify-content:center;
-        position:fixed;
         width:100vw;
         height:${(({$display})=> $display ? '100vh' : '0')};
-        top:0;
-        left:0;
+        opacity:${(({$display})=> $display ? 1 : 0)};
+        pointer-events:${(({$display})=> $display ? 'all' : 'none')};
         background-color:#1d976cc4;
         backdrop-filter:blur(2px);
 
@@ -64,7 +63,6 @@ export const Nav = styled.nav<Partial<Props>>`
         display:flex; 
         gap:30px;
         
-
 
         @media (max-width:755px) {
          position:relative;
@@ -154,10 +152,9 @@ export const Nav = styled.nav<Partial<Props>>`
 `;
 
 export const LogoImage = styled.img`
+cursor:pointer;
 width:190px; 
 height:auto; 
-cursor:pointer;
-
 
 `;
 
@@ -167,10 +164,10 @@ export const MenuMobile = styled.div<Partial<Props>>`
     display:none;
     pointer-events:none;
     width:auto; 
-    height:auto;
+    height:50px;
 
     svg{
-        font-size:28px;
+        font-size:35px;
         fill:${(({$display})=> $display ? 'white' :  '#1D976C')};
         cursor: pointer;
 

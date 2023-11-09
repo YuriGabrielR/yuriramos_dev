@@ -10,17 +10,16 @@ justify-content:space-around;
 flex-wrap:wrap;
 width:100%;
 height:auto;
-padding:15px;
-padding-top:80px;
+padding: 80px 15px 0;
 margin-top:190px;
 border-top:1px solid #dee2e6;
 
 
 &::before{
+    content:'Sobre Mim';
     position:absolute;
     top:-40px;
     left:90px;
-    content:'Sobre Mim';
     text-transform:uppercase;
     font-family:${theme.fonts.mainFont};
     font-size:30px;
@@ -45,10 +44,10 @@ border-top:1px solid #dee2e6;
 }
 
 &::after{
+    content:'Skills ';
     position:absolute;
     top:-40px;
     right:90px;
-    content:'Skills ';
     text-transform:uppercase;
     font-family:${theme.fonts.mainFont};
     font-size:30px;
@@ -56,8 +55,6 @@ border-top:1px solid #dee2e6;
     color:#1D976C;
 
     @media (max-width:960px) {
-        
-
         opacity:0;
         pointer-events:none;
     }
@@ -66,25 +63,24 @@ border-top:1px solid #dee2e6;
 
 
 @media (max-width: 960px) {
-    
+
     gap:60px;
 }
 `;
 
 
 export const IconFloat = styled.span`
+position:absolute; 
+top:-50px;
+z-index:9;
 display:flex;
 align-items:center;
 justify-content:center;
-position:absolute; 
 background-color:white;
-top:-50px;
 width:100px; 
 height:100px;
 border-radius:50%;
 box-shadow:0px 0px 56px -8px rgba(0, 0, 0, 0.17);
-z-index:9;
-
 
 svg{
 
@@ -133,16 +129,14 @@ top:-30px;
 `;
 
 export const TitlesAbout = styled.h2`
-    position:relative;
     display:flex;
     align-items:center;
     gap:5px;
-    font-family:${theme.fonts.mainFont}; 
     color: #6ba88c;
+    font-family:${theme.fonts.mainFont}; 
     text-transform:uppercase;
     font-weight:900;
-    font-size:22px;
-    
+    font-size:22px;    
 
     @media (max-width:1189px) {
 
@@ -176,15 +170,15 @@ ul{
 
 
 &::after{
-    position:absolute;
     content:''; 
-    background:url("/assets/images/About/pattern.svg");
-    object-fit:cover;
+    position:absolute;
     z-index:-1;
-    height:200px; 
-    width:200px;
     left:-25px;
     top:40px;
+    background:url("/assets/images/About/pattern.svg");
+    object-fit:cover;
+    height:200px; 
+    width:200px;
     opacity:50%;
 }
 `;
@@ -192,24 +186,19 @@ ul{
 export const ImageAbout = styled.img`
 width:250px; 
 height:250px; 
-
 `;
 
 export const ContentAbout = styled.div`
 display:flex;
 flex-direction:column;
-padding:10px;
 align-items:center;
 gap:55px;
 width:50%;
+padding:10px;
 
 @media(max-width:960px){
-
     width:100%;
-    
-
 }
-
 `;
 
 
@@ -218,7 +207,6 @@ max-width:500px;
 display:flex; 
 flex-direction:column; 
 gap:18px; 
-
 
 p{
     font-family:${theme.fonts.mainFont}; 
@@ -263,7 +251,6 @@ border-left:1px solid #dee2e6;
     padding-right:8px;
     width:100%;
 }
-
 `;
 
 
@@ -271,8 +258,6 @@ export const TitleCustom = styled(TitlesAbout)`
 justify-content:center;
 width:100%;
 `;
-
-
 
 export const TechsBox = styled.div`
 display:flex;
@@ -288,8 +273,8 @@ div{
     p{
 
         font-family:${theme.fonts.mainFont}; 
-        color: grey;
         font-size:15.5px;
+        color: grey;
 
     }
 
@@ -298,22 +283,21 @@ div{
         align-items:center;
         justify-content:center;
         gap:20px;
-        width:100%;
         text-align:center;
         font-family:${theme.fonts.mainFont};
         flex-wrap:wrap;
+        width:100%;
     }   
 
 }
 `;
 
 export const LiIcons = styled.li<Partial<Props>>`
-    
  cursor:pointer;
  position:relative;
 
 
- @media (max-width:970px) {
+ @media (max-width:1173px) {
 
     cursor: default;
     
@@ -338,9 +322,10 @@ export const LiIcons = styled.li<Partial<Props>>`
     transition: 0.3s all ease-in-out;
 
 
-    @media (max-width:1061px) {
+    @media (max-width:1173px) {
         
-        bottom:-30px;
+        display:none;
+        
     }
 
 
@@ -351,17 +336,8 @@ export const LiIcons = styled.li<Partial<Props>>`
 
         &:hover::after{
             pointer-events:all;
-               opacity:1;
-                width:${(({$width})=> $width ? '100px' : '100%')}; 
-
-
-            @media (max-width: 970px)  {
-                pointer-events:none; 
-                width:0%;
-                opacity:0;
-                
-            }
-                    
+            opacity:1;
+            width:${(({$width})=> $width ? '100px' : '100%')};         
         }
 
         
@@ -387,25 +363,23 @@ width:100%;
         display:flex;
         justify-content:center;
         align-items:center;
+        flex-wrap:wrap;
         gap:20px;
         width:100%;
         font-family:${theme.fonts.mainFont};
-        flex-wrap:wrap;
     }
 
 `;
 
 export const LiIconsLibs = styled.li<Partial<Props>>`
+    cursor:pointer;
+    position:relative;
 
-cursor:pointer;
- position:relative;
-
-    @media(max-width:970px) {
+   @media(max-width: 1173px) {
 
      cursor: default;
 
-    }
-
+   }
 
   &::after {
     position:absolute;
@@ -425,6 +399,13 @@ cursor:pointer;
     padding:5px;
     transition: 0.3s all ease-in-out;
 
+    @media (max-width:1173px) {
+        display:none;
+        width:0px;
+                
+    }
+                    
+
   }
             
         
@@ -432,18 +413,9 @@ cursor:pointer;
 
         &:hover::after{
             pointer-events:all;
-               opacity:1;
-                height:auto;
-                width:${(({$width})=> $width ? '100px' : '72px')}; 
-
-
-                @media (max-width: 970px)  {
-                    pointer-events:none; 
-                    width:0%;
-                    opacity:0;
-                    
-                }; 
-                    
+            opacity:1;
+            height:auto;
+            width:${(({$width})=> $width ? '100px' : '72px')}; 
         }
 `;
 
@@ -453,7 +425,7 @@ display:flex;
 flex-direction:column; 
 gap:18px;
 
-   
+  
     p{
 
          font-family:${theme.fonts.mainFont}; 
@@ -476,14 +448,15 @@ gap:18px;
 
 
 export const LiIconsTools = styled.li<Partial<Props>>`
-cursor:pointer;
+ cursor:pointer;
  position:relative;
 
 
-    @media(max-width: 970px){
-        cursor:default;
+ @media(max-width: 1173px){
+
+    cursor:default;
                 
-    }
+  }
 
 
   &::after {
@@ -504,22 +477,20 @@ cursor:pointer;
     padding:5px;
     transition: 0.3s all ease-in-out;
 
+    @media (max-width:1173px) {
+        display:none;
+        width:0px;
+                
+    }
+
   }
             
     
 
         &:hover::after{
             pointer-events:all;
-               opacity:1;
-                height:auto;
-                width:${(({$width})=> $width ? '120px' : '80px')};
-
-             @media(max-width: 970px)  {
-                pointer-events:none; 
-                width:0%;
-                opacity:0;
-                
-             }
-                    
+            opacity:1;
+            height:auto;
+            width:${(({$width})=> $width ? '120px' : '80px')};              
         }
 `;

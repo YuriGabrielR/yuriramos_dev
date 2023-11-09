@@ -3,10 +3,10 @@ import { AiFillHtml5 } from "react-icons/ai"
 import { BiLogoCss3, BiLogoJavascript, BiLogoTypescript} from "react-icons/bi"
 import { FaSass } from "react-icons/fa"
 import { GrReactjs } from "react-icons/gr"
-import { SiAdobephotoshop, SiCanva, SiMui, SiReactquery, SiReactrouter, SiRedux, SiStyledcomponents, SiSwiper} from "react-icons/si"
+import { SiAdobephotoshop, SiAxios, SiCanva, SiMui, SiReactquery, SiReactrouter, SiRedux, SiStyledcomponents, SiSwiper} from "react-icons/si"
 import {TbBrandFramerMotion} from "react-icons/tb"
 import {PiFigmaLogoDuotone} from "react-icons/pi"
-import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs"
+import { BsGit, BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs"
 
 
 
@@ -25,6 +25,13 @@ export const IconTechs = [
     {
         icon:Icon(BiLogoCss3, '#306AF1', '50px'), 
         iconName:'CSS', 
+        customWidth: false,
+
+    }, 
+ 
+    {
+        icon:Icon(BsGit, '#E84D31', '45px'), 
+        iconName:'GIT', 
         customWidth: false,
 
     }, 
@@ -97,7 +104,14 @@ export const IconsLibs = [
 
     }, 
 
+    {
+        icon:Icon(SiAxios, '#671DDF', '40px'), 
+        iconName:'Axios', 
+        customWidth: true,
 
+    }, 
+
+    
     {
         icon:Icon(SiReactrouter, '#F44250', '40px'), 
         iconName:'React Router', 

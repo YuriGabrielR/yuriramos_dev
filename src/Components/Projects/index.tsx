@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <Container>
 
-      <Title>
+      <Title> 
 
         <p> Meus projetos. </p>
         <h2 id="#Portfólio" > Portfólio </h2>

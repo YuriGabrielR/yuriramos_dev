@@ -25,12 +25,9 @@ height:350px;
 
 
 @media (max-width:580px) {
-
-       width:300px; 
-       height:300px;
-
+    width:300px; 
+    height:300px;
 }
-     
 
 `;
 
@@ -91,6 +88,10 @@ span{
             
     }
 
+    @media (max-width:580px) {
+        align-items:center;
+    }
+
     p{  
         max-width:540px;
         font-size:18px;
@@ -113,10 +114,7 @@ span{
     }
 
 
-    @media (max-width:580px) {
-           align-items:center;
-            
-    }
+   
 
 }
 
@@ -129,7 +127,6 @@ cursor: pointer;
 width:180px; 
 height:40px;
 background: #1D976C;  
-
 border-radius:24px;
 transition: background 0.4s;
 

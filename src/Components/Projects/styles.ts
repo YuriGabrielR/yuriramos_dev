@@ -28,9 +28,9 @@ h2{
     position: relative;
     font-family:${theme.fonts.mainFont}; 
     font-weight:800;
-    color:${theme.color.mainColor};
     text-transform:uppercase; 
     font-size:30px;
+    color:${theme.color.mainColor};
 
 
     &::before{
@@ -52,12 +52,10 @@ h2{
 export const Wrapper = styled.div`
     display:flex;
     flex-wrap:wrap;
-    max-width:1200px; 
-    gap:50px;
-    height:100%; 
     justify-content:space-around;
-
-
+    gap:50px;
+    max-width:1200px; 
+    height:100%; 
 
 `;
 
@@ -68,11 +66,10 @@ flex-direction:column;
 gap:25px;
 width:500px; 
 height:auto; 
-padding:10px;
 
 &:nth-child(even){
 
-margin-top:80px;
+    margin-top:80px;
 
     @media (max-width:1049px) {
         
@@ -98,7 +95,6 @@ height:300px;
 background-image:${(({$src})=> `url(${$src})`)};
 background-size:contain;
 background-repeat:no-repeat;
-border-radius:15px;
 background-position:center;
 
 
@@ -128,12 +124,12 @@ gap:20px;
 
 h3{
     font-family:${theme.fonts.mainFont};
-    color:${theme.color.secondaryColor};
     text-transform:uppercase;
     font-weight:800;
+    color:${theme.color.secondaryColor};
 
 
-    @media (max-width:550px){
+    @media (max-width:1055px){
 
         text-align:center;
 
@@ -143,13 +139,17 @@ h3{
 
 p{
     font-family:${theme.fonts.mainFont};
-    color:${theme.color.secondaryColor};
     font-size:16px;
-    
-    @media (max-width:550px){
+    color:${theme.color.secondaryColor};
+    padding: 0 5px;
 
-        width:100%;
+    @media (max-width:1055px){
         text-align:center;
+    }
+
+    @media (max-width:550px){
+        font-size:15px;
+        width:100%;
         
     }
 
@@ -176,7 +176,7 @@ span{
         color:${theme.color.secondaryColor};
         text-transform:uppercase;
 
-        @media(max-width:1049px){
+        @media(max-width:1055px){
 
         text-align:center;
 
@@ -193,7 +193,7 @@ ul{
     display:flex;
     gap:5px;
     
-    @media(max-width:1049px){
+    @media(max-width:1055px){
 
     justify-content:center;
 
@@ -206,13 +206,13 @@ p{
     font-family:${theme.fonts.mainFont};
     color:${theme.color.secondaryColor};
     font-size:16px;
-    @media(max-width:1049px){
-
-    text-align:center;
+    
+    @media(max-width:1055px){
+     font-size:15px;   
+     text-align:center;
 
 
     }
-    
 }
 
 `;
@@ -221,7 +221,7 @@ export const ButtonsArea = styled.div`
 display:flex;
 gap:10px;
 
-@media (max-width:1049px) {
+@media (max-width:1055px) {
     justify-content:center;
 
 }
@@ -232,8 +232,6 @@ button{
     width:110px;
     height:30px;
     background-color:${theme.color.secondaryColor};
-   
-
     border-radius:10px;
 
     a{
@@ -244,20 +242,16 @@ button{
         width:100%;
         height:100%;
         color:white;
-
-
+        font-family:${theme.fonts.mainFont}; 
+        font-size:15px;
+        font-weight:700;
+        
         svg{
             font-size:20px;
             fill:white;
         }
-
-        font-family:${theme.fonts.mainFont}; 
-        font-size:15px;
-        font-weight:500;
-
         
     }
 }
-
 
 `;

@@ -5,8 +5,7 @@ export const Container = styled.footer`
 position:relative;
 display:flex;
 justify-content:space-between;
-position: relative;
-width:100vw;
+width:100%;
 height: 600px;
 background: #348F50;
 background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  
@@ -40,23 +39,29 @@ margin-top:200px;
     height:200px;
 
   }
+
+  @media (max-width:530px)  {
+   display:none;    
+
+  }
+
 }
 
 
 &::after {
   content:'';
   position:absolute;
+  right:0;
+  bottom:0; 
   background:url('/assets/images/Form/armwall.png');
   background-size:cover;
   background-position:center;
   width:220px;
   height:230px;
-  right:0;
-  bottom:0; 
   transform:scaleX(-1);
 
   @media (max-width:1189px)  {
-  display:none;    
+   display:none;    
 
   }
 
@@ -80,37 +85,37 @@ box-shadow:0px 0px 56px -8px rgba(0, 0, 0, 0.17);
 z-index:9;
 
 
-@keyframes spin {
+  @keyframes bounce {
 
-  from{
-    transform: translateY(0px);
+    from{
+      transform: translateY(0px);
 
-  }
+    }
 
-  to{
-    transform: translateY(5px) ;
-  }
+    to{
+      transform: translateY(5px) ;
+    }
 
-  
-}
+
+  };
 
 
 svg{
+  animation: bounce 0.3s infinte alternate;
+  font-size:50px;
 
-font-size:50px;
-
-@media (max-width:970px) {
-    
+  @media (max-width:970px) {
+      
     font-size:45px;
 
-}
+  }
 
 
-@media (max-width:450px) {
+  @media (max-width:450px) {
 
     font-size:35px;
 
-}
+  }
 }
 
 @media (max-width:960px) {
