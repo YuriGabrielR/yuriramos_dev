@@ -22,7 +22,7 @@ export default function Main() {
 
                   
                 <Button>
-                  <a target='_blank' href="https://drive.google.com/file/d/1OaE9HsXIKEvKfX5EzSyXg_TR9ExQB2fv/view?usp=sharing">
+                  <a target='_blank' href="https://drive.google.com/drive/folders/1dKTaKsr2rsi_7Wrb2FTpfwGodzOrxik7?usp=sharing">
 
                     <h3> Currículo </h3>
 
