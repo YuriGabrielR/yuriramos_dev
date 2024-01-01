@@ -1,5 +1,5 @@
-import { IconTechs, IconsAbout, IconsLibs, IconsTools } from "./data";
-import { ButtonCV, Container, ContentAbout, ContentSkills, IconFloat, ImageAbout, LiIcons, LiIconsLibs, LiIconsTools, LibsBox, ProfileAbout, TechsBox, TextAbout, TitleCustom, TitlesAbout, ToolsBox } from "./styles";
+import { BackEndTechs, FrontEndTechs, IconsAbout, IconsLibs, IconsTools } from "./data";
+import { AreaTechsBox, ButtonCV, Container, ContentAbout, ContentSkills, IconFloat, ImageAbout, LiIcons, LiIconsLibs, LiIconsTools, LibsBox, ProfileAbout, TechsBox, TextAbout, TitleCustom, TitlesAbout, ToolsBox } from "./styles";
 import {CgCodeSlash} from "react-icons/cg";
 
 export default function About() {
@@ -45,11 +45,10 @@ export default function About() {
           </TitleCustom>
 
           <p>
-            Como você já sabe, meu nome é Yuri e tenho 22 anos, sou formado em <strong>Análise e Desenvolvimento de Sistemas </strong> pela <strong>UNESA</strong> e hoje atuo como freelancer desenvolvendo projetos na função de <strong>Desenvolvedor Front-end.</strong>
+            Como você já sabe, meu nome é Yuri e tenho 23 anos, sou formado em <strong>Análise e Desenvolvimento de Sistemas </strong> pela <strong>UNESA</strong> e hoje atuo como freelancer desenvolvendo projetos na função de <strong>Desenvolvedor Fullstack.</strong>
           </p>
 
-          <p> Tenho <strong>estudado</strong>  também o desenvolvimento <strong>Back-End</strong>, mais especificamente o <strong>Node JS</strong>, além de já obter conhecimento em <strong>Banco de dados </strong>portanto, em breve me tornarei um <strong>Dev. Full Stack</strong>.
-          </p>
+         
 
 
         </TextAbout>
@@ -69,30 +68,46 @@ export default function About() {
       <ContentSkills>
 
         <TechsBox>
-          <div>
+          <AreaTechsBox>
             <TitlesAbout>Tecnologias que utilizo</TitlesAbout>
 
-            <p> Como dev front-end, obtenho experiência nas seguintes
+            <p>Como <strong>Desenvolvedor Front-End</strong> , obtenho experiência nas seguintes
               tecnologias: <strong>HTML</strong>, <strong>CSS</strong>,
               <strong> Git/Github</strong>, <strong>SASS</strong>, <strong>JavaScript</strong>,
               <strong> TypeScript </strong> ,<strong> React</strong> e
               <strong> Styled Components </strong>.
             </p>
 
-                
-
             <ul>
 
-            {IconTechs.map((i, index)=>(
+            {FrontEndTechs.map((i, index)=>(
 
               <LiIcons $width={i.customWidth} data-text={i.iconName} key={index}> {i.icon} </LiIcons>
 
             ))}
 
             </ul>
+                            
+            <p> Como <strong>Desenvolvedor Back-End</strong>  , desenvolvo
+            <strong> API's</strong> e demais serviços utilizando as tecnologias: 
+              <strong> Node.js</strong>, <strong>Express</strong>,
+              <strong> TypeScript</strong>, <strong>MySQL</strong>, <strong>PostgreSQL</strong>,
+              <strong> MongoDB </strong> ,<strong> Firebase</strong>, <strong> Sequelize </strong>, <strong> PrismaORM </strong> e  <strong> Mongoose </strong>.
+            </p>
+                
+            <ul>
+
+            {BackEndTechs.map((i, index)=>(
+
+              <LiIcons $width={i.customWidth} data-text={i.iconName} key={index}> {i.icon} </LiIcons>
+
+            ))}
+
+            </ul>   
+         
 
             
-          </div>
+          </AreaTechsBox>
 
         </TechsBox>
 
@@ -127,7 +142,7 @@ export default function About() {
                 <TitlesAbout> Ferramentas </TitlesAbout>
 
                 <p> Quando prototipamos nossos projetos, o desenvolvimento do mesmo se torna mais rápido e produtivo, para tal tarefa e outras como edição de imagens, utilizo as ferramentas: 
-                 <strong> Photoshop, Figma e Canva.</strong> </p>
+                 <strong> Photoshop, Figma e Canva.</strong> Para os testes de API'S utilizo: <strong>Insomnia e Postman.</strong> </p> 
 
                 <ul>
 

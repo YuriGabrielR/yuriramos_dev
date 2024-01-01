@@ -262,9 +262,11 @@ width:100%;
 export const TechsBox = styled.div`
 display:flex;
 flex-direction:column;
+`;
+
+export const AreaTechsBox = styled.div`
 
 
-div{ 
     display:flex;
     flex-direction:column;
     gap:18px;
@@ -276,6 +278,13 @@ div{
         font-size:15.5px;
         color: grey;
 
+        &:nth-child(4){
+            margin-top:35px;
+
+            @media (max-width:400px) {
+                margin-top:18px;
+            }
+        }
     }
 
     ul{
@@ -287,9 +296,13 @@ div{
         font-family:${theme.fonts.mainFont};
         flex-wrap:wrap;
         width:100%;
+
+       
     }   
 
-}
+
+
+
 `;
 
 export const LiIcons = styled.li<Partial<Props>>`

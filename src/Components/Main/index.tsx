@@ -9,13 +9,13 @@ export default function Main() {
             <div id='#home'>
               <p>Olá, sou o Yuri!</p>   
 
-             <h1>Desenvolvedor Front-End.</h1>
+             <h1>Desenvolvedor Fullstack.</h1>
 
             </div>
              
 
             <span>
-                <p> Tenho 22 anos e sou desenvolvedor front-end com 10 meses 
+                <p> Tenho 23 anos e sou desenvolvedor front-end com 1 ano 
                  de experiência trabalhando como freelancer.
                 
                 </p>
